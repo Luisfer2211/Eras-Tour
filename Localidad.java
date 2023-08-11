@@ -5,7 +5,6 @@ public class Localidad {
     private int capacidad;
     private int boletosVendidos;
 
-    // Constructor
     public Localidad(int localidadID, String nombre, int precio, int capacidad) {
         this.localidadID = localidadID;
         this.nombre = nombre;
@@ -14,7 +13,6 @@ public class Localidad {
         this.boletosVendidos = 0;
     }
 
-    // Métodos para verificar espacio, validar precio y vender boletos
     public boolean hayEspacio() {
         return boletosVendidos < capacidad;
     }
@@ -27,7 +25,6 @@ public class Localidad {
         boletosVendidos += cantidad;
     }
 
-    // Getters para las propiedades
     public int getLocalidadID() {
         return localidadID;
     }
